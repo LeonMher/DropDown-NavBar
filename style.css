@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(226, 196, 255);
+    height: 300vh;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    height: 60px;
+    
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+}
+
+.navBar ul li{
+    list-style: none;
+    width: 300px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.navBarPhone {
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .navBarPhone {
+        visibility: visible;
+    }
+
+    .desktopNavBar{
+        display: none;
+    }
+
+    .btn{
+        position: absolute;
+        left:480px;
+        bottom: 680px;
+    }
+   
+    .navBarPhone ul li{
+        position: relative;
+        top: 100px;
+        list-style: none;
+        font-size: 30px;
+        height: 0;
+        opacity: 0%;
+        transition: .3s ease-in;
+    }
+
+    .newClass ul li{
+   
+     
+        transition: .3s ease-in;
+        height: 100px;
+        opacity: 100%;
+    }
+    
+
+   
+
+  }
